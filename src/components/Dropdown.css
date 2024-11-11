@@ -1,0 +1,40 @@
+/* src/components/Dropdown.css */
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    position: relative;
+  }
+  
+  .dropdown-label {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 4px;
+  }
+  
+  .dropdown-container {
+    position: relative;
+  }
+  
+  select {
+    appearance: none;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 32px 8px 12px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+  }
+  

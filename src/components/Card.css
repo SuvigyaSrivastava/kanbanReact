@@ -1,0 +1,72 @@
+/* src/components/Card.css */
+
+.task-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.task-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.menu-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.task-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.task-card p {
+    font-size: 13px;
+    color: #4B5563;
+    margin: 8px 0 12px;
+    line-height: 1.4;
+}
+
+.task-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.priority-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.task-tag {
+    font-size: 12px;
+    color: #6B7280;
+    background-color: #E5E7EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #E5E7EB;
+}

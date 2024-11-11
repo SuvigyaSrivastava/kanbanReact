@@ -1,0 +1,72 @@
+/* src/components/KanbanBoard.css */
+
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f4f6;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.display-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.display-dropdown label {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.display-dropdown select {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #374151;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+}
+
+/* Adjust kanban-columns to wrap rows on smaller screens */
+.kanban-columns {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into new rows */
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+}
+
+.kanban-column {
+    flex: 1 1 200px; /* Responsive resizing */
+    background-color: #f9fafb;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kanban-column h3 {
+    font-size: 16px;
+    color: #111827;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
